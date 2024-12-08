@@ -13,9 +13,9 @@ export default function Home() {
       </div>
 
       <ul className="mt-2 sm:text-2xl">
-        <li className="group">
+        <li>
           - <b>Electrical</b> Apprentice{" "}
-          <a href="https://www.equans.ch/home" className="inline-block">
+          <a href="https://www.equans.ch/home" className="inline-block group">
             @ Equans Swizerland
             <span className="max-w-0 group-hover:max-w-full bg-opacity-0 group-hover:bg-opacity-100 transition-all delay-400 h-0.5 block translate-y-[-0.3rem] bg-black" />
           </a>
