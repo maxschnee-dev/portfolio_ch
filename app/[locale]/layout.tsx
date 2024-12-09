@@ -25,16 +25,19 @@ export default async function RootLayout({
   }
 
   const messages = await getMessages();
+  const env = process.env.NODE_ENV;
 
   return (
     <>
       <head>
         {/* Self hosted Analytics */}
-        <script
-          defer
-          src="https://umami.max07.ch/script.js"
-          data-website-id="246a00fd-70ff-4a21-be73-bcfd5d1a120c"
-        ></script>
+        {env === "production" && (
+          <script
+            defer
+            src="https://umami.max07.ch/script.js"
+            data-website-id="246a00fd-70ff-4a21-be73-bcfd5d1a120c"
+          />
+        )}
       </head>
       <html lang={params.locale}>
         <body className={inter.className}>
