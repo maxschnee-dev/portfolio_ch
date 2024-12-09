@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 import { redirect } from "../../i18n/routing";
 import LanguageSelect from "../../components/LanguageSelect";
+import RichText from "../../components/RichText";
 
 export default function Home() {
   const t = useTranslations("Landing");
@@ -17,7 +18,7 @@ export default function Home() {
 
       <ul className="mt-2 sm:text-2xl">
         <li>
-          - <b>Electrical</b> Apprentice{" "}
+          - <RichText>{(tags) => t.rich("position", tags)}</RichText>
           <a href="https://www.equans.ch/home" className="inline-block group">
             @ Equans Swizerland
             <span className="max-w-0 group-hover:max-w-full bg-opacity-0 group-hover:bg-opacity-100 transition-all delay-400 h-0.5 block translate-y-[-0.3rem] bg-black" />
