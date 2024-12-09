@@ -1,4 +1,10 @@
+import { useTranslations } from "next-intl";
+import { redirect } from "../../i18n/routing";
+import LanguageSelect from "../../components/LanguageSelect";
+
 export default function Home() {
+  const t = useTranslations("Landing");
+
   return (
     <div className="p-5">
       <div className="flex flex-row justify-between">
@@ -6,10 +12,7 @@ export default function Home() {
           Max<strong className="font-normal text-gray-400">imilian</strong>{" "}
           Schneebeli
         </h1>
-        <select name="Lang" id="lang">
-          <option value="en">ENG</option>
-          <option value="de">DE</option>
-        </select>
+        <LanguageSelect />
       </div>
 
       <ul className="mt-2 sm:text-2xl">
@@ -20,9 +23,7 @@ export default function Home() {
             <span className="max-w-0 group-hover:max-w-full bg-opacity-0 group-hover:bg-opacity-100 transition-all delay-400 h-0.5 block translate-y-[-0.3rem] bg-black" />
           </a>
         </li>
-        <li>
-          - <b>Programming</b> Hobbyist
-        </li>
+        <li>- {t("programmer")}</li>
       </ul>
     </div>
   );
