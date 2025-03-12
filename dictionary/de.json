@@ -2,5 +2,14 @@
   "Landing": {
     "position": "Lernender <b>Elektroinstallateur</b> EFZ",
     "programmer": "Hobby Informatiker"
+  },
+  "Social": {
+    "emailAriaLabel": "E-Mail senden",
+    "instagramAriaLabel": "Mein Instagram besuchen",
+    "githubAriaLabel": "Mein GitHub besuchen",
+    "discordAriaLabel": "Meinen Discord-Tag kopieren",
+    "discordTag": "Discord-Tag",
+    "copyTag": "In die Zwischenablage kopieren",
+    "copied": "Kopiert!"
   }
 }

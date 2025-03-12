@@ -2,5 +2,14 @@
   "Landing": {
     "position": "Electrical Apprentice",
     "programmer": "Hobbyist Programmer"
+  },
+  "Social": {
+    "emailAriaLabel": "Email me",
+    "instagramAriaLabel": "Visit my Instagram",
+    "githubAriaLabel": "Check out my GitHub",
+    "discordAriaLabel": "Copy my Discord tag",
+    "discordTag": "Discord Tag",
+    "copyTag": "Copy to clipboard",
+    "copied": "Copied!"
   }
 }
