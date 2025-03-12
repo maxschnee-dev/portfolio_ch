@@ -1,0 +1,8 @@
+---
+description: the technologies that shuold be used when interacting with the codebase
+globs: 
+alwaysApply: false
+---
+TypeScript, Node.js, Next.js App Router, React, Shadcn UI, nuqs, next-intl Radix UI and Tailwind.
+
+DO NOT INTRODUCE ANY NEW TECHNOLOGIES WITHOUT MY EXPLICIT CONSENT

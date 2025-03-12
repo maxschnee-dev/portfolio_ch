@@ -1,0 +1,8 @@
+---
+description: styling visual components
+globs: 
+alwaysApply: false
+---
+- Always apply styles optimized for light mode.  
+- If shadcn/ui already provides good default styling, avoid unnecessary overrides.  
+- When designing, reference those from the shadcn/ui documentation whenever possible.  

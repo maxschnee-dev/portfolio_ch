@@ -1,0 +1,6 @@
+---
+description: choosing cli tools
+globs: 
+alwaysApply: false
+---
+always use PNPM instad of NPM for package management
