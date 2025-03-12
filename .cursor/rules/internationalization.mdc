@@ -1,0 +1,10 @@
+---
+description: always internationalize
+globs: 
+alwaysApply: false
+---
+
+### **Internationalization (i18n) with `next-intl`**
+- Use [`next-intl`](https://next-intl-docs.vercel.app/) for managing translations and locale detection.
+- Store all translations in the `dictionary/` directory, organized by locale:
+- Always localize to german using the swiss german standard, no dialect just no scharfes s

@@ -1,10 +1,11 @@
 import { useTranslations } from "next-intl";
-import { redirect } from "../../i18n/routing";
 import LanguageSelect from "../../components/LanguageSelect";
 import RichText from "../../components/RichText";
+import ClientSocialLinks from "./ClientSocialLinks";
 
 export default function Home() {
   const t = useTranslations("Landing");
+  const socialT = useTranslations("Social");
 
   return (
     <div className="p-8">
@@ -16,7 +17,17 @@ export default function Home() {
         <LanguageSelect />
       </div>
 
-      <ul className="mt-2 sm:text-2xl">
+      <ClientSocialLinks
+        emailAriaLabel={socialT("emailAriaLabel")}
+        instagramAriaLabel={socialT("instagramAriaLabel")}
+        githubAriaLabel={socialT("githubAriaLabel")}
+        discordAriaLabel={socialT("discordAriaLabel")}
+        discordTagLabel={socialT("discordTag")}
+        copyTagLabel={socialT("copyTag")}
+        copiedLabel={socialT("copied")}
+      />
+
+      <ul className="mt-4 sm:text-2xl">
         <li>
           - <RichText>{(tags) => t.rich("position", tags)}</RichText>{" "}
           <a href="https://www.equans.ch/home" className="inline-block group">
